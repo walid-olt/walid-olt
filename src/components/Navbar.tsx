@@ -1,8 +1,8 @@
 import Logo from "./Logo";
-
-const Navbar = () => {
+type Props = React.ComponentPropsWithoutRef<"nav">;
+const Navbar = (props: Props) => {
   return (
-    <nav>
+    <nav {...props}>
       <Logo />
     </nav>
   );
