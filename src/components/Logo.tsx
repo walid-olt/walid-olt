@@ -89,13 +89,14 @@ const LogoIcon = () => {
           <g id="icon" clipPath="url(#clip0_5_4)">
             <g id="Group">
               <g id="circle_2">
-                <animateTransform
-                  attributeName="transform"
-                  type="rotate"
-                  values="0 127 13; 360 127 13"
-                  dur="4s"
-                  repeatCount="indefinite"
-                />
+                {/* <animateTransform */}
+                {/**/}
+                {/*   attributeName="transform" */}
+                {/*   type="rotate" */}
+                {/*   values="0 127 13; 360 127 13" */}
+                {/*   dur="4s" */}
+                {/*   repeatCount="indefinite" */}
+                {/* /> */}
 
                 <path
                   id="Vector"
@@ -107,13 +108,13 @@ const LogoIcon = () => {
                 />
               </g>
               <g id="circle_1">
-                <animateTransform
-                  attributeName="transform"
-                  type="rotate"
-                  values="0 127 13; 360 127 13"
-                  dur="4s"
-                  repeatCount="indefinite"
-                />
+                {/* <animateTransform */}
+                {/*   attributeName="transform" */}
+                {/*   type="rotate" */}
+                {/*   values="0 127 13; 360 127 13" */}
+                {/*   dur="4s" */}
+                {/*   repeatCount="indefinite" */}
+                {/* /> */}
                 <path
                   id="Vector_2"
                   d="M114.976 1.97588C112.43 4.52151 115.525 11.7542 121.891 18.1102C128.255 24.4742 135.478 27.5691 138.025 25.0234C140.569 22.4778 137.474 15.2451 131.108 8.88917C124.744 2.52509 117.523 -0.569753 114.976 1.97588Z"

@@ -2,6 +2,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
+@plugin "@tailwindcss/typography";
 @custom-variant dark (&:is(.dark *));
 :root {
   --card: oklch(1 0 0);
@@ -267,4 +268,10 @@
     150px 0,
     200px 0;
 }
+article {
+  @apply font-mono prose prose-headings:text-foreground prose-p:text-foreground/90;
+}
 
+body {
+  scroll-behavior: smooth;
+}

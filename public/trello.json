@@ -1,0 +1,222 @@
+{
+  "name": "Portfolio Development",
+  "defaultLists": false,
+  "labels": [
+    { "name": "Home", "color": "green", "id": "lab_home" },
+    { "name": "About", "color": "blue", "id": "lab_about" },
+    { "name": "Portfolio", "color": "purple", "id": "lab_portfolio" },
+    { "name": "Skills", "color": "orange", "id": "lab_skills" },
+    { "name": "Contact", "color": "red", "id": "lab_contact" },
+    { "name": "UI/UX", "color": "pink", "id": "lab_design" },
+    { "name": "Backend", "color": "cyan", "id": "lab_backend" },
+    { "name": "Urgent", "color": "red", "id": "lab_urgent" }
+  ],
+  "customFields": [
+    {
+      "id": "cf_status",
+      "display": { "cardFront": true },
+      "name": "Status",
+      "type": "list",
+      "options": [
+        { "id": "opt_todo", "value": { "text": "To Do" }, "color": "gray" },
+        {
+          "id": "opt_progress",
+          "value": { "text": "In Progress" },
+          "color": "yellow"
+        },
+        {
+          "id": "opt_review",
+          "value": { "text": "In Review" },
+          "color": "blue"
+        },
+        { "id": "opt_done", "value": { "text": "Done" }, "color": "green" }
+      ]
+    },
+    {
+      "id": "cf_priority",
+      "display": { "cardFront": true },
+      "name": "Priority",
+      "type": "list",
+      "options": [
+        { "id": "opt_low", "value": { "text": "Low" }, "color": "green" },
+        {
+          "id": "opt_medium",
+          "value": { "text": "Medium" },
+          "color": "orange"
+        },
+        { "id": "opt_high", "value": { "text": "High" }, "color": "red" }
+      ]
+    },
+    {
+      "id": "cf_deadline",
+      "display": { "cardFront": true },
+      "name": "Deadline",
+      "type": "date"
+    },
+    {
+      "id": "cf_assignee",
+      "display": { "cardFront": false },
+      "name": "Assignee",
+      "type": "text"
+    },
+    {
+      "id": "cf_estimatedHours",
+      "display": { "cardFront": true },
+      "name": "Estimated Hours",
+      "type": "number"
+    }
+  ],
+  "lists": [
+    {
+      "name": "📋 Backlog",
+      "cards": [
+        {
+          "name": "Setup TypeScript configuration",
+          "idLabels": ["lab_home"],
+          "customFieldItems": [
+            { "idValue": "opt_todo", "idCustomField": "cf_status" },
+            { "idValue": "opt_high", "idCustomField": "cf_priority" },
+            { "value": { "number": "2" }, "idCustomField": "cf_estimatedHours" }
+          ]
+        },
+        {
+          "name": "Create reusable components (ProjectCard, SkillBadge)",
+          "idLabels": ["lab_portfolio", "lab_skills", "lab_design"],
+          "customFieldItems": [
+            { "idValue": "opt_todo", "idCustomField": "cf_status" },
+            { "idValue": "opt_high", "idCustomField": "cf_priority" },
+            { "value": { "number": "4" }, "idCustomField": "cf_estimatedHours" }
+          ]
+        },
+        {
+          "name": "Setup data files (projects.ts, skills.ts)",
+          "idLabels": ["lab_portfolio", "lab_skills"],
+          "customFieldItems": [
+            { "idValue": "opt_todo", "idCustomField": "cf_status" },
+            { "idValue": "opt_high", "idCustomField": "cf_priority" },
+            { "value": { "number": "2" }, "idCustomField": "cf_estimatedHours" }
+          ]
+        },
+        {
+          "name": "Create Navbar with active page highlighting",
+          "idLabels": ["lab_home", "lab_design"],
+          "customFieldItems": [
+            { "idValue": "opt_todo", "idCustomField": "cf_status" },
+            { "idValue": "opt_medium", "idCustomField": "cf_priority" },
+            { "value": { "number": "3" }, "idCustomField": "cf_estimatedHours" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "🔵 This Week",
+      "cards": [
+        {
+          "name": "Build Home page with hero section",
+          "idLabels": ["lab_home", "lab_design"],
+          "customFieldItems": [
+            { "idValue": "opt_progress", "idCustomField": "cf_status" },
+            { "idValue": "opt_high", "idCustomField": "cf_priority" },
+            {
+              "value": { "date": "2026-06-18T23:59:59.000Z" },
+              "idCustomField": "cf_deadline"
+            },
+            { "value": { "number": "5" }, "idCustomField": "cf_estimatedHours" }
+          ]
+        },
+        {
+          "name": "Implement About page with timeline",
+          "idLabels": ["lab_about", "lab_design"],
+          "customFieldItems": [
+            { "idValue": "opt_progress", "idCustomField": "cf_status" },
+            { "idValue": "opt_medium", "idCustomField": "cf_priority" },
+            {
+              "value": { "date": "2026-06-19T23:59:59.000Z" },
+              "idCustomField": "cf_deadline"
+            },
+            { "value": { "number": "4" }, "idCustomField": "cf_estimatedHours" }
+          ]
+        },
+        {
+          "name": "Create Portfolio page with project cards",
+          "idLabels": ["lab_portfolio", "lab_design"],
+          "customFieldItems": [
+            { "idValue": "opt_progress", "idCustomField": "cf_status" },
+            { "idValue": "opt_high", "idCustomField": "cf_priority" },
+            {
+              "value": { "date": "2026-06-19T23:59:59.000Z" },
+              "idCustomField": "cf_deadline"
+            },
+            { "value": { "number": "6" }, "idCustomField": "cf_estimatedHours" }
+          ]
+        },
+        {
+          "name": "Build Skills page with categorized skills",
+          "idLabels": ["lab_skills", "lab_design"],
+          "customFieldItems": [
+            { "idValue": "opt_progress", "idCustomField": "cf_status" },
+            { "idValue": "opt_medium", "idCustomField": "cf_priority" },
+            {
+              "value": { "date": "2026-06-20T23:59:59.000Z" },
+              "idCustomField": "cf_deadline"
+            },
+            { "value": { "number": "4" }, "idCustomField": "cf_estimatedHours" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "⚙ In Development",
+      "cards": [
+        {
+          "name": "Design and style Contact form",
+          "idLabels": ["lab_contact", "lab_design"],
+          "customFieldItems": [
+            { "idValue": "opt_review", "idCustomField": "cf_status" },
+            { "idValue": "opt_medium", "idCustomField": "cf_priority" },
+            { "value": { "number": "3" }, "idCustomField": "cf_estimatedHours" }
+          ]
+        },
+        {
+          "name": "Implement Dark/Light mode toggle",
+          "idLabels": ["lab_home", "lab_design"],
+          "customFieldItems": [
+            { "idValue": "opt_review", "idCustomField": "cf_status" },
+            { "idValue": "opt_medium", "idCustomField": "cf_priority" },
+            { "value": { "number": "3" }, "idCustomField": "cf_estimatedHours" }
+          ]
+        },
+        {
+          "name": "Add CV download button",
+          "idLabels": ["lab_home"],
+          "customFieldItems": [
+            { "idValue": "opt_progress", "idCustomField": "cf_status" },
+            { "idValue": "opt_low", "idCustomField": "cf_priority" },
+            { "value": { "number": "1" }, "idCustomField": "cf_estimatedHours" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "✅ Done",
+      "cards": [
+        {
+          "name": "Project planning and requirements analysis",
+          "idLabels": ["lab_home"],
+          "customFieldItems": [
+            { "idValue": "opt_done", "idCustomField": "cf_status" },
+            { "value": { "number": "2" }, "idCustomField": "cf_estimatedHours" }
+          ]
+        },
+        {
+          "name": "Setup Next.js/TypeScript project structure",
+          "idLabels": ["lab_home"],
+          "customFieldItems": [
+            { "idValue": "opt_done", "idCustomField": "cf_status" },
+            { "value": { "number": "1" }, "idCustomField": "cf_estimatedHours" }
+          ]
+        }
+      ]
+    }
+  ]
+}
